@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My diary</title>
+  <link rel="stylesheet" href="diary.css"/>
+</head>
+
+<body>
+<div class="form-body">
+  <div class="form-holder">
+    <form class="header_btn">
+      <div class="form-button">
+        <a class="btn" href="../about/about.html" role="button">About site</a>
+        <a class="btn" href="../account/account.html" role="button">My account</a>
+      </div>
+    </form>
+    <div class="form-content">
+      <div class="form-items">
+        <h2>My diary</h2>
+        <div class="add_day">
+          <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+            Add a note
+          </button>
+        </div>
+        <div class="day-card">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">21.02.2022</h3>
+              <h4 class="card-subtitle1">Bad day :(</h4>
+              <p class="card-text">I went to cinema. The movie was very boring</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="card1check1">
+                <label class="form-check-label" for="card1check1">
+                  go to the post office
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="card1check2">
+                <label class="form-check-label" for="card1check2">
+                  transplant flowers
+                </label>
+              </div>
+              <div class="edit">
+                <button type="button" class="btn-edit" data-bs-toggle="modal" data-bs-target="#Modal">
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">22.02.2022</h3>
+              <h4 class="card-subtitle2">Great day :D</h4>
+              <p class="card-text">It’s going really well. I had the most amazing breakfast, the sun is beautiful, and I just won the lottery</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="card2check1">
+                <label class="form-check-label" for="card2check1">
+                  make an appointment with the dentist
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="card2check2">
+                <label class="form-check-label" for="card2check2">
+                  complete lab work
+                </label>
+              </div>
+              <div class="edit">
+                <button type="button" class="btn-edit" data-bs-toggle="modal" data-bs-target="#Modal">
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="ModalLabel">Today</h2>
+      </div>
+      <div class="modal-body">
+        <form class="form-day">
+          <div class="col-md-12">
+            <input  class="form-control" type="date" id="Date" >
+          </div>
+          <div class="form-day-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Bad day
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Great day
+            </label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Tell about the day" id="floatingTextarea2"></textarea>
+          </div>
+
+          <div class="task">
+            <h3>Tasks for tomorrow <button class="btn-plus-minus">+</button></h3>
+            <div class="task-group">
+              <input type="text" class="form-control-task" placeholder="task" aria-label="task" aria-describedby="button-minus">
+              <button class="btn-plus-minus" type="button">-</button>
+            </div>
+            <div class="task-group">
+              <input type="text" class="form-control-task" placeholder="task" aria-label="task" aria-describedby="button-minus">
+              <button class="btn-plus-minus" type="button">-</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn-secondary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
